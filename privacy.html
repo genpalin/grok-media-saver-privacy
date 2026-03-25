@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Grok Media Saver</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    header svg { flex-shrink: 0; opacity: 0.9; }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 0.82rem;
+      color: #777;
+      margin-top: 2px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #222;
+    }
+
+    p { margin-bottom: 12px; color: #ccc; font-size: 0.93rem; }
+    ul { margin: 8px 0 12px 20px; }
+    ul li { margin-bottom: 8px; font-size: 0.93rem; color: #ccc; }
+    ul li strong { color: #fff; }
+
+    .callout {
+      background: #1a1a2a;
+      border-left: 3px solid #ff6d00;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.92rem;
+      color: #e0c9b8;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 0.88rem;
+    }
+    th {
+      text-align: left;
+      padding: 8px 12px;
+      background: #1a1a1a;
+      color: #aaa;
+      font-weight: 600;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    td {
+      padding: 9px 12px;
+      border-bottom: 1px solid #1e1e1e;
+      color: #ccc;
+    }
+    td:first-child { font-family: monospace; color: #ff9d5c; font-size: 0.85rem; }
+    tr:hover td { background: rgba(255,255,255,0.02); }
+
+    code {
+      font-family: monospace;
+      background: #1e1e1e;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: #ff9d5c;
+    }
+
+    a { color: #ff9d5c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #1e1e1e;
+      font-size: 0.8rem;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ff6d00" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      <div>
+        <h1>Privacy Policy</h1>
+        <p>Grok Media Saver · Last updated: March 25, 2026</p>
+      </div>
+    </header>
+
+    <!-- Overview -->
+    <h2>Overview</h2>
+    <p>
+      Grok Media Saver is a Chrome browser extension that helps users download images and videos
+      from <a href="https://grok.com" target="_blank" rel="noopener">grok.com</a>.
+      This policy describes what data the extension accesses, why, and how it is handled.
+    </p>
+
+    <!-- Data collected -->
+    <h2>1. Data We Access</h2>
+    <p>The extension accesses the following data, exclusively on <strong>grok.com</strong> pages:</p>
+    <ul>
+      <li>
+        <strong>Image &amp; video URLs</strong> — The extension scans the active Grok page's DOM
+        to discover media resource URLs (e.g., hosted on <code>imagine-public.x.ai</code> or
+        <code>assets.grok.com</code>). These URLs are used only to trigger a download to your
+        local device.
+      </li>
+      <li>
+        <strong>Video metadata</strong> — Duration, dimensions, and thumbnail frame data already
+        present in the page's <code>&lt;video&gt;</code> elements, used to display previews inside
+        the extension panel.
+      </li>
+      <li>
+        <strong>Local download references</strong> — When you use "Select from recent Grok
+        downloads," the extension reads filenames and paths of files already saved on your device
+        via Chrome's <code>downloads</code> API.
+      </li>
+      <li>
+        <strong>License key</strong> — If you activate a Pro license, your key is stored locally
+        in <code>chrome.storage.local</code> only. It is never transmitted to any analytics or
+        third-party service.
+      </li>
+    </ul>
+
+    <!-- No upload -->
+    <h2>2. Data We Do <em>Not</em> Collect</h2>
+    <div class="callout">
+      All processing — page scanning, file downloading, video merging, and trimming — happens
+      entirely within your local browser using Chrome's built-in APIs.
+      <strong>No data leaves your device except to initiate direct downloads from Grok's own servers.</strong>
+    </div>
+    <p>The extension does <strong>not</strong>:</p>
+    <ul>
+      <li>Upload any media, URLs, or personal data to any server operated by the developer.</li>
+      <li>Track your browsing history or behavior beyond the active Grok page.</li>
+      <li>Use cookies, fingerprinting, or any form of analytics.</li>
+      <li>Share or sell any data to third parties.</li>
+    </ul>
+
+    <!-- Permissions -->
+    <h2>3. Permissions Justification</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why it's needed</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>tabs / activeTab</td><td>Identify the active grok.com tab and access its page content</td></tr>
+        <tr><td>scripting</td><td>Inject a content script to scan media elements and capture video thumbnails</td></tr>
+        <tr><td>downloads</td><td>Save discovered media files to your local Downloads folder</td></tr>
+        <tr><td>storage</td><td>Persist user preferences (language, license key) locally on your device</td></tr>
+        <tr><td>sidePanel</td><td>Display the extension's full UI as a Chrome side panel</td></tr>
+        <tr><td>alarms</td><td>Schedule delays between prompts in the Auto-Queue feature</td></tr>
+        <tr><td>host permissions</td><td>Fetch media files from Grok's CDN directly to your device</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Third parties -->
+    <h2>4. Third-Party Services</h2>
+    <p>
+      When you choose to purchase a Pro license, you will be directed to
+      <a href="https://www.lemonsqueezy.com" target="_blank" rel="noopener">LemonSqueezy</a>
+      (a third-party payment processor) to complete your purchase. The developer does not receive
+      or store your payment card information. Please refer to
+      <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">LemonSqueezy's Privacy Policy</a>
+      for details.
+    </p>
+
+    <!-- Children -->
+    <h2>5. Children's Privacy</h2>
+    <p>
+      This extension is not directed at children under the age of 13 and does not knowingly
+      collect any personal data from minors.
+    </p>
+
+    <!-- Changes -->
+    <h2>6. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Changes will be noted via an updated
+      "Last updated" date at the top of this page.
+    </p>
+
+    <!-- Contact -->
+    <h2>7. Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy, please contact:<br/>
+      <strong>Developer:</strong> genpalin<br/>
+      <strong>Email:</strong> <a href="mailto:genpalin@msn.com">genpalin@msn.com</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Grok Media Saver · <a href="mailto:genpalin@msn.com">genpalin@msn.com</a>
+    </footer>
+  </div>
+</body>
+</html>
